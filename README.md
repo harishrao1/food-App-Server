@@ -33,8 +33,3 @@ This project provides a simple Express.js API to interact with the Swiggy platfo
     - `place_id`: Place ID for the location.
 
 
-Contributions are welcome! Feel free to open an issue or submit a pull request.
-
-## License
-
-This project is licensed under the MIT License.
