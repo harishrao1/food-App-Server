@@ -57,10 +57,6 @@ app.get("/api/menu", (req, res) => {
     });
 });
 
-app.get("/", (req, res) => {
-  res.json({ testing: "Hello Food Kitchen !!" });
-});
-
 app.get("/location", (req, res) => {
   const { input } = req.query;
   const url = `https://www.swiggy.com/dapi/misc/place-autocomplete?input=${input}`;
@@ -104,6 +100,10 @@ app.get("/addresses", (req, res) => {
     .then((data) => {
       res.json(data);
     });
+});
+
+app.get("/", (req, res) => {
+  res.json({ message: "Welcome to the Swiggy API!", testing: "Hello!!" });
 });
 
 app.listen(port, () => {
